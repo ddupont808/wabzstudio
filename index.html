@@ -1,0 +1,211 @@
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js">
+	</script>
+	<script type="text/javascript" src="https://golden-layout.com/files/latest/js/goldenlayout.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="https://golden-layout.com/files/latest/css/goldenlayout-base.css" />
+	<link type="text/css" rel="stylesheet" href="https://golden-layout.com/files/latest/css/goldenlayout-light-theme.css" />
+	
+	<script src='spectrum/spectrum.js'></script>
+	<link rel='stylesheet' href='spectrum/spectrum.css' />
+
+	<link type="text/css" rel="stylesheet" href="css/header.css" />
+	<link type="text/css" rel="stylesheet" href="css/toolbar.css" />
+	<link type="text/css" rel="stylesheet" href="css/layout.css" />
+	<link type="text/css" rel="stylesheet" href="css/explorer.css" />
+	<link type="text/css" rel="stylesheet" href="css/properties.css" />
+
+	<script src="unity_build/Build/UnityLoader.js"></script>
+	
+	<script>
+		document.onkeydown = function (e) {
+				e = e || window.event;
+				if (e.ctrlKey) {
+					e.preventDefault();
+				}
+			};
+	</script>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			user-select: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="logo">&nbsp</div>
+		<div class="menu">
+			<div class="title">
+				<input placeholder="Untitled Game" />
+			</div>
+			<div class="menubar">
+				<button>
+					File
+				</button><button class="active">
+					Home
+				</button><button>
+					Model
+				</button><button>
+					Test
+				</button><button>
+					View
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="toolbar">
+		<div class="tool-group">
+			<div class="tools" id="tools">
+				<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="None">
+					<img src="icons/select.png" />
+					Select
+				</button>
+				<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Position">
+					<img src="icons/position.svg" />
+					Move
+				</button>
+				<button class="tool active" unity-object="Editor" unity-method="SetTool" unity-value="Scale">
+					<img src="icons/scale.svg" />
+					Scale
+				</button>
+				<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Rotation">
+					<img src="icons/rotate.svg" />
+					Rotate
+				</button>
+			</div>
+			<span class="label">
+				Tools
+			</span>
+		</div><div class="tool-group">
+			<div class="tools">
+				<button unity-object="Editor" unity-method="Test">
+					<img src="icons/play.svg" />
+					Play
+				</button>
+				<button>
+					<img src="icons/pause.svg" />
+					Pause
+				</button>
+				<button>
+					<img src="icons/stop.svg" />
+					Stop
+				</button>
+			</div>
+			<span class="label">
+				Play
+			</span>
+		</div><div class="tool-group">
+			<div class="tools">
+				<button>
+					<img src="icons/workshop.svg" />
+					Workshop
+				</button>
+				<button unity-object="Editor" unity-method="CreatePart">
+					<img src="icons/part.svg" />
+					Part
+				</button>
+			</div>
+			<span class="label">
+				Create
+			</span>
+		</div><div class="tool-group">
+			<div class="tools">
+				<button class="tool two-tone" unity-object="Editor" unity-method="SetTool" unity-value="Texture">
+					<div class="top">
+						<img src="icons/texture.svg" />
+					</div><div class="bottom">
+						<span class="tool-name">
+							Texture
+						</span>
+						<img class="bullet" src="icons/tool_expand.png" />
+					</div>
+				</button>
+				<button class="tool two-tone" unity-object="Editor" unity-method="SetTool" unity-value="Color">
+					<div class="top">
+						<img id="colorTool" src="icons/color.png" style="-webkit-mask-image: url(icons/colormask.png); background-color: white; -webkit-mask-size: 100%" />
+					</div><div class="bottom" id="colorPicker">
+						<span class="tool-name">
+							Color
+						</span>
+						<img class="bullet" src="icons/tool_expand.png" />
+					</div>
+				</button>
+				<button unity-object="Editor" unity-method="GroupSelection">
+					<img src="icons/group.svg" />
+					Group
+				</button>
+				<button unity-object="Editor" unity-method="UngroupSelection">
+					<img src="icons/ungroup.svg" />
+					Ungroup
+				</button>
+				<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Lock">
+					<img src="icons/lock.svg" />
+					Lock
+				</button>
+			</div>
+			<span class="label">
+				Edit
+			</span>
+		</div><div class="tool-group">
+			<div class="tools">
+					<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Freeze">
+						<img src="icons/freeze.svg" />
+						Freeze
+					</button>
+					<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Weld">
+						<img src="icons/link.svg" />
+						Weld
+					</button>
+					<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Rope">
+						<img src="icons/rope.svg" />
+						Rope
+					</button>
+					<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Wing">
+						<img src="icons/wings.svg" />
+						Wings
+					</button>
+					<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Thruster">
+						<img src="icons/motor.svg" />
+						Motor
+					</button>
+					<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Thruster">
+						<img src="icons/thruster.svg" />
+						Thruster
+					</button>
+			</div>
+			<span class="label">
+				Physics
+			</span>
+		</div><div class="tool-group">
+			<div class="tools">
+				<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Wire">
+					<img src="icons/wire.svg" />
+					Wire
+				</button>
+				<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Input">
+					<img src="icons/input.svg" />
+					Input
+				</button>
+				<button class="tool" unity-object="Editor" unity-method="SetTool" unity-value="Output">
+					<img src="icons/output.svg" />
+					Output
+				</button>
+			</div>
+			<span class="label">
+				Wiring
+			</span>
+		</div>
+	</div>
+
+	<div class="container">
+
+	</div>
+	
+	<script src="bundle.js"></script>
+</body>
+</html>

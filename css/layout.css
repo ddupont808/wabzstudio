@@ -1,0 +1,57 @@
+.sp-container {
+    background: white;
+    -webkit-box-shadow: 0px 0px 84px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 84px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 84px 0px rgba(0,0,0,0.2);
+    border-color: #EEEEEE;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sp-container input {
+    border-radius: 0px;
+    border: 1px solid #E0E0E0;
+}
+
+.container {
+    height: calc(100vh - 154px);
+}
+
+.lm_goldenlayout  {
+    font-family: 'Roboto', sans-serif;
+    background: #EEEEEE;
+}
+
+.lm_header .lm_tab,
+.lm_header .lm_tab.lm_active {
+    background: none;
+    box-shadow: none;
+    border: none;
+
+    text-transform: capitalize;
+    font-family: 'Roboto', sans-serif;
+
+    box-sizing: border-box !important;
+    height: 20px;
+}
+
+.lm_header .lm_tab.lm_active {
+    border-bottom: solid 2px #03A9F4;
+}
+
+.lm_header .lm_tab:hover {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.lm_close_tab {
+    opacity: 0 !important;
+}
+
+.lm_tab.lm_active .lm_close_tab,
+    .lm_tab:hover .lm_close_tab {
+    opacity: 0.4 !important;
+}
+
+.lm_content {
+    background: white;
+    border-color: #E0E0E0;
+}

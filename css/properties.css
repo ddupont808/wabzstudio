@@ -1,0 +1,56 @@
+.properties {
+    user-select: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.properties table {
+    width: 100%;
+}
+
+.properties .header {
+    background: #F3F3F3;
+    padding: 4px 4px;
+    font-size: 13px;
+    font-weight: bold;
+    border-bottom: solid 1px #E0E0E0;
+}
+
+.properties .bullet {
+    opacity: 0.2;
+    padding-right: 4px;
+    vertical-align: top;
+}
+
+.properties .bullet:hover {
+    opacity: 0.5;
+}
+
+.properties td {
+    border-bottom: solid 1px #E0E0E0;
+    padding: 4px 4px;
+    font-size: 13px;
+}
+
+.properties td[contentEditable=true] {
+    user-select: text;
+    background: white;
+}
+
+.properties td:first-child {
+    padding-left: 24px;
+}
+
+.properties tr:nth-child(odd) {
+    background: #F9F9F9;
+}
+
+.properties .header:hover, 
+.properties tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.properties td + td {
+    border-left: solid 1px #E0E0E0;
+}

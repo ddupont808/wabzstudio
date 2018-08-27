@@ -1,0 +1,39 @@
+.explorer {
+    height: 100%;
+    overflow: auto;
+}
+
+.explorer .instance {
+    font-size: 13px;
+    line-height: 16px;
+    padding: 2px 2px;
+    user-select: none;
+    border: solid 1px transparent;
+}
+
+.explorer .instance:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.explorer .instance.active {
+    background: #03A9F4;
+    border: solid 1px #98DBFA;
+    color: white;
+}
+
+.explorer .instance * {
+    vertical-align: middle;
+    height: 16px;
+}
+
+.explorer .instance .bullet {
+    opacity: 0.2;
+}
+
+.explorer .instance .bullet:hover {
+    opacity: 0.5;
+}
+
+.explorer .instance img {
+    padding-right: 2px;
+}

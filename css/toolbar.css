@@ -1,0 +1,98 @@
+.toolbar {
+	/* padding: 0px 20px 0px 20px; */
+	border-bottom: solid 1px #E0E0E0;
+}
+
+.toolbar * {
+	font-family: 'Roboto', sans-serif;
+	
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.toolbar .tool-group {
+	padding: 3px 6px 3px 6px;
+	vertical-align: top;
+	display: inline-block;
+	border-right: solid 1px #E0E0E0;
+}
+
+.toolbar .tool-group .label {
+	margin-top: 3px;
+	display: block;
+	width: 100%;
+	font-size: 11px;
+	text-align: center;
+	color: grey;
+}
+
+.toolbar .tool-group .tools button {
+	border: none;
+	outline: none;
+	background: none;
+	
+	font-size: 11px;
+	border: solid 1px transparent;
+	padding: 2px 2px 16px 2px;
+	text-align: center;
+	
+	opacity: 0.6;
+}
+
+.toolbar .tool-group .tools button:hover {
+	background: #F0F0F0;
+	border-color: #DADBDC;
+	opacity: 1;
+}
+
+.toolbar .tool-group .tools button.two-tone {
+	background: none;
+	padding: 0;
+}
+
+.toolbar .tool-group .tools button.active {
+	background: #E0E0E0;
+	border-color: #DADBDC;
+	opacity: 1;
+}
+
+.toolbar .tool-group .tools button.two-tone .bottom {
+	height: 29px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.toolbar .tool-group .tools button.two-tone .bottom .tool-name {
+	display: block;
+}
+
+.toolbar .tool-group .tools button.two-tone .bottom .bullet {
+	margin-top: 4px;
+	width: 5px;
+	height: 5px;
+}
+
+.toolbar .tool-group .tools button.two-tone .bottom:hover,
+.toolbar .tool-group .tools button.two-tone .top:hover {
+	background: #F0F0F0;
+}
+
+.toolbar .tool-group .tools button.two-tone:hover .top {
+	border-bottom: solid 1px #DADBDC;
+}
+
+.toolbar .tool-group .tools button.two-tone .top {
+	height: 37px;
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.toolbar .tool-group .tools button img {
+	width: 32px;
+	height: 32px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 3px;
+}

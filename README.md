@@ -13,4 +13,7 @@ texture prefixes are "tile_", "wood_", and "brick_"
 
 ## screenshot
 
-![alt text](https://i.imgur.com/MwnAT0a.png)
+editor
+![editor](https://i.imgur.com/MwnAT0a.png)
+player
+![player](https://i.imgur.com/RCy2vXD.png)

@@ -1,3 +1,4 @@
+### ( i removed the binaries so the demo wont work for now )
 # wabzstudio 
 a dirty roblox studio clone
 
